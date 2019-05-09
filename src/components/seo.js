@@ -6,7 +6,7 @@ import { StaticQuery, graphql } from "gatsby"
 function SEO({ description, lang, meta, keywords, title }) {
   return (
     <StaticQuery
-      query={detailsQuery}
+      query={detailsQuery} //eslint-disable-line no-use-before-define
       render={data => {
         const metaDescription =
           description || data.site.siteMetadata.description

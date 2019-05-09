@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
@@ -14,7 +14,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
+        <Seo
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
@@ -34,7 +34,7 @@ class BlogIndex extends React.Component {
               </h3>
               <small>{node.frontmatter.date}</small>
               <p
-                dangerouslySetInnerHTML={{
+                dangerouslySetInnerHTML={{ //eslint-disable-line react/no-danger
                   __html: node.frontmatter.description || node.excerpt,
                 }}
               />

@@ -1,11 +1,13 @@
+/*eslint-disable camelcase*/
+
 module.exports = {
   siteMetadata: {
     title: `MikeRamzCode`,
     author: `Mike Ramirez`,
     description: `Mike's own website`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://www.mikeramzdesign.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `mike_ramirez`,
     },
   },
   plugins: [
@@ -61,7 +63,7 @@ module.exports = {
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#663399`, 
         display: `minimal-ui`,
         icon: `content/assets/gatsby-icon.png`,
       },
